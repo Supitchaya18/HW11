@@ -8,9 +8,11 @@ void setup() {
   Serial.begin(115200);
   delay(1000);
 
-  Serial.println("\n--- เริ่มต้นการทำงานโปรเจกต์ ---");
-  Serial.print("กำลังเชื่อมต่อ Wi-Fi: ");
+  Serial.println("เริ่มต้นการเชื่อมต่อ Wi-Fi...");
+  Serial.print("SSID: ");
   Serial.println(ssid);
+  Serial.print("Password: ");
+  Serial.println(password);
 
   WiFi.begin(ssid, password);
 
